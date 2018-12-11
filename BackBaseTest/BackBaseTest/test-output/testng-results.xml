@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="89374" started-at="2018-12-11T19:19:47Z" finished-at="2018-12-11T19:21:16Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="89374" started-at="2018-12-11T19:19:47Z" finished-at="2018-12-11T19:21:16Z">
+      <class name="com.backbase.automation.testcases.BackBaseEdgeTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.backbase.automation.testcases.BackBaseEdgeTest@3fee9989]" name="setUp" is-config="true" duration-ms="10807" started-at="2018-12-12T00:49:47Z" finished-at="2018-12-12T00:49:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkUpdateComputerByRemovingComputerNameFromDatabase()[pri:7, instance:com.backbase.automation.testcases.BackBaseEdgeTest@3fee9989]" name="checkUpdateComputerByRemovingComputerNameFromDatabase" duration-ms="73403" started-at="2018-12-12T00:49:58Z" finished-at="2018-12-12T00:51:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUpdateComputerByRemovingComputerNameFromDatabase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.backbase.automation.testcases.BackBaseEdgeTest@3fee9989]" name="tearDown" is-config="true" duration-ms="5128" started-at="2018-12-12T00:51:11Z" finished-at="2018-12-12T00:51:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.backbase.automation.testcases.BackBaseEdgeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

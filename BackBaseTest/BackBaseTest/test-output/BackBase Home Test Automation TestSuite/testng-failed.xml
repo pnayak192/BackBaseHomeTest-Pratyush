@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BackBase Home Test Automation TestSuite]">
+  <test name="CRUD Test Cases(failed)">
+    <classes>
+      <class name="com.backbase.automation.testcases.BackBaseCRUDTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="createReadAndDeleteComputerFromDatabase"/>
+        </methods>
+      </class> <!-- com.backbase.automation.testcases.BackBaseCRUDTest -->
+    </classes>
+  </test> <!-- CRUD Test Cases(failed) -->
+</suite> <!-- Failed suite [BackBase Home Test Automation TestSuite] -->
