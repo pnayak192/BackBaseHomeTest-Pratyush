@@ -6,14 +6,10 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -45,7 +41,7 @@ public class TestBase {
 	public static void initialization() throws InterruptedException{
 		String browserName = prop.getProperty("browser");
 
-		if(browserName.equals("chrome")){
+		if(browserName.equals("CHROME")){
 			if (isPlatformWindows())
 				System.setProperty("webdriver.chrome.driver", "src/main/resources/bin/x32/win/chromedriver.exe");
 			else if (isPlatformMAC())
@@ -66,16 +62,9 @@ public class TestBase {
 		e_driver.register(eventListener);
 		driver = e_driver;
 		
-		//This condition is added as, driver.manage().window().maximize() creates issue on macosx
-		if (isPlatformWindows()){
-			driver.manage().window().setSize(new Dimension(1600, 900));
-		}
-		else {
-			driver.manage().window().maximize();
-		}
+		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(prop.getProperty("url"));
-		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 	}
 

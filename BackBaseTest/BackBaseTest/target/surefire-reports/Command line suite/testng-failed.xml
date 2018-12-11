@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.backbase.automation.testcases.BackBaseEdgeTest">
+        <methods>
+          <include name="createAndReadComputerWithOnlyComputerNameFromDatabase"/>
+          <include name="tearDown"/>
+          <include name="checkUpdateComputerByRemovingComputerNameFromDatabase"/>
+          <include name="cancelCreationOfComputerFromDatabase"/>
+          <include name="checkCreationOfComputerWithoutComputerNameFromDatabase"/>
+          <include name="checkSavingDuplicateComputersToDatabase"/>
+          <include name="setUp"/>
+          <include name="cancelUpdateComputerFromDatabase"/>
+          <include name="createAndReadComputerWithoutDatesToDatabase"/>
+        </methods>
+      </class> <!-- com.backbase.automation.testcases.BackBaseEdgeTest -->
+      <class name="com.backbase.automation.testcases.BackBaseCRUDTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="updateAndReadComputerFromDatabase"/>
+          <include name="setUp"/>
+          <include name="creatReadUpdateAndDeleteComputerFromDatabase"/>
+          <include name="createReadAndDeleteComputerFromDatabase"/>
+        </methods>
+      </class> <!-- com.backbase.automation.testcases.BackBaseCRUDTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

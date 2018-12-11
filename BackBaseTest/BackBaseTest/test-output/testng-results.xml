@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89374" started-at="2018-12-11T19:19:47Z" finished-at="2018-12-11T19:21:16Z">
+  <suite name="Default suite" duration-ms="49316" started-at="2018-12-11T21:09:44Z" finished-at="2018-12-11T21:10:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89374" started-at="2018-12-11T19:19:47Z" finished-at="2018-12-11T19:21:16Z">
-      <class name="com.backbase.automation.testcases.BackBaseEdgeTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.backbase.automation.testcases.BackBaseEdgeTest@3fee9989]" name="setUp" is-config="true" duration-ms="10807" started-at="2018-12-12T00:49:47Z" finished-at="2018-12-12T00:49:58Z">
+    <test name="Default test" duration-ms="49316" started-at="2018-12-11T21:09:44Z" finished-at="2018-12-11T21:10:34Z">
+      <class name="com.backbase.automation.testcases.BackBaseCRUDTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.backbase.automation.testcases.BackBaseCRUDTest@59494225]" name="setUp" is-config="true" duration-ms="4220" started-at="2018-12-12T02:39:44Z" finished-at="2018-12-12T02:39:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="checkUpdateComputerByRemovingComputerNameFromDatabase()[pri:7, instance:com.backbase.automation.testcases.BackBaseEdgeTest@3fee9989]" name="checkUpdateComputerByRemovingComputerNameFromDatabase" duration-ms="73403" started-at="2018-12-12T00:49:58Z" finished-at="2018-12-12T00:51:11Z">
+        <test-method status="PASS" signature="createReadAndDeleteComputerFromDatabase()[pri:1, instance:com.backbase.automation.testcases.BackBaseCRUDTest@59494225]" name="createReadAndDeleteComputerFromDatabase" duration-ms="44492" started-at="2018-12-12T02:39:49Z" finished-at="2018-12-12T02:40:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkUpdateComputerByRemovingComputerNameFromDatabase -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.backbase.automation.testcases.BackBaseEdgeTest@3fee9989]" name="tearDown" is-config="true" duration-ms="5128" started-at="2018-12-12T00:51:11Z" finished-at="2018-12-12T00:51:16Z">
+        </test-method> <!-- createReadAndDeleteComputerFromDatabase -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.backbase.automation.testcases.BackBaseCRUDTest@59494225]" name="tearDown" is-config="true" duration-ms="586" started-at="2018-12-12T02:40:33Z" finished-at="2018-12-12T02:40:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.backbase.automation.testcases.BackBaseEdgeTest -->
+      </class> <!-- com.backbase.automation.testcases.BackBaseCRUDTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

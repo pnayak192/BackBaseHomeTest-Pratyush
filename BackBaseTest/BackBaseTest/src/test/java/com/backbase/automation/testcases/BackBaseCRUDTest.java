@@ -1,8 +1,6 @@
 package com.backbase.automation.testcases;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,14 +33,10 @@ public class BackBaseCRUDTest extends TestBase{
 	private int existingComputerCount ;
 
 
-//	public CRUDTestCasesUI(){
-//		super();
-//
-//	} 
-//	@BeforeMethod
-//	public void setUp() throws InterruptedException {
-//		initialization();
-//	}
+	public BackBaseCRUDTest(){
+		super();
+
+	} 
 
 	@Test(priority=1)
 	// This test case will create data, read and delete the data.
@@ -173,72 +167,4 @@ public class BackBaseCRUDTest extends TestBase{
 		if (updatedComputerCount>existingComputerCount)
 			TestCasesHelper.deleteUniqueComputerData(computerName_2);
 	} 
-	
-/*	private void checkAndDeleteExistingComputerData(String computerName) throws InterruptedException, ParseException{
-		mainPage = new ApplicationMainPage();
-		editComputerPage = new EditComputerPage();
-		if(mainPage.checkComputer(computerName)){
-		editComputerPage.deleteComputerFromDatabase();
-		mainPage.verifyDeleteMessage();
-		this.latestComputerCount = mainPage.checkAndGetComputerCountDisplayed();
-		Assert.assertTrue(latestComputerCount < updatedComputerCount,"Deletion of new computer "
-				+ "has not decreased computer count");
-		}
-	}
-	
-	
-	// This method checks for Unique or Duplicate 
-	private void deleteUniqueComputerData(String computerName) throws InterruptedException, ParseException{
-		mainPage = new ApplicationMainPage();
-		editComputerPage = new EditComputerPage();
-		mainPage.updateComputer(computerName);
-		editComputerPage.deleteComputerFromDatabase();
-		mainPage.verifyDeleteMessage();
-		this.latestComputerCount = mainPage.checkAndGetComputerCountDisplayed();
-		Assert.assertTrue(latestComputerCount < updatedComputerCount,"Deletion of new computer "
-				+ "has not decreased computer count");
-	}
-	
-	private void readUniqueComputerData(String computerName, String introducedDate, String discontinuedDate, 
-			String company) throws InterruptedException, ParseException{
-		mainPage = new ApplicationMainPage();
-		mainPage.searchAvailableComputerName(computerName); 
-		mainPage.readFirstComputerInfoFromDatabaseTable(computerName, introducedDate, 
-					discontinuedDate, company);
-	}
-	
-	private void readDuplicateComputerData(String computerName, String introducedDate, String discontinuedDate, 
-			String company) throws InterruptedException, ParseException{
-		mainPage = new ApplicationMainPage();
-		mainPage.checkDuplicateComputersContainingSameData(computerName, introducedDate, 
-				discontinuedDate, company);
-	}
-	
-	private void readAndDeleteDuplicateComputerFromDatabase(String computerName, String introducedDate, String discontinuedDate, 
-			String company) throws InterruptedException, ParseException{
-		mainPage = new ApplicationMainPage();
-		addComputerPage = new AddComputerPage();
-		editComputerPage = new EditComputerPage();
-		int count = mainPage.checkDuplicateComputersContainingSameData(computerName, introducedDate, 
-				discontinuedDate, company);
-		if (count > 1) {
-			for (int i = 0; i < count; i++){
-				this.updatedComputerCount = mainPage.checkAndGetComputerCountDisplayed();
-				mainPage.updateComputer(computerName);
-				editComputerPage.deleteComputerFromDatabase();
-				mainPage.verifyDeleteMessage();
-				this.latestComputerCount = mainPage.checkAndGetComputerCountDisplayed();
-				Assert.assertTrue(latestComputerCount < updatedComputerCount,"Deletion of new computer "
-						+ "has not decreased computer count");
-			}
-		} 
-	} */
-
-	
-//	@AfterMethod
-//	public void tearDown(){
-//
-//		driver.quit();
-//	}
-
 }
