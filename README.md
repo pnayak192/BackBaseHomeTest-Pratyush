@@ -53,6 +53,14 @@ Hence the pom.xl has all the required dependencies mentioned.
 
 ### Test cases explanation
 
+The framework contains both UI Automation and Manual Test Cases.
+
+## Manual Test Cases
+
+An excel file named `BackBaseHomeManualTestCases.xlxs` for  manual test cases is present under `Manual-TestCases` folder.
+
+## Automation Test cases 
+
 There are 2 classes containing different test cases inside `com.backbase.automation.testcases` under `src/test/java` folder.
 
   * `BackBaseCRUDTest` - Contains all test cases covering end to end flow. Where new computer data is created > read > updated > deleted.
