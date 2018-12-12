@@ -94,7 +94,7 @@ All the codes are written under src/test/java.
 
 ## Resource and Suite Level
 
-All the drivers and TestNG suites are listed under `src/main/resources` folder
+All the drivers and TestNG test suites are listed under `src/main/resources` folder
 
 ## Framework Flow
 
